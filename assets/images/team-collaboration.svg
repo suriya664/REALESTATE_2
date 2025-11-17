@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="teamCollab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#teamCollab)"/>
+  <g opacity="0.22" fill="#ffffff">
+    <circle cx="320" cy="260" r="140"/>
+    <circle cx="1080" cy="260" r="160"/>
+    <circle cx="700" cy="180" r="120"/>
+  </g>
+  <rect x="200" y="320" width="1000" height="420" rx="48" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)" stroke-width="6"/>
+  <rect x="260" y="380" width="280" height="260" rx="30" fill="rgba(15,23,42,0.35)"/>
+  <rect x="560" y="380" width="320" height="260" rx="30" fill="rgba(15,23,42,0.28)"/>
+  <rect x="920" y="380" width="220" height="260" rx="30" fill="rgba(15,23,42,0.38)"/>
+  <circle cx="1100" cy="620" r="60" fill="#22d3ee" opacity="0.35"/>
+  <circle cx="320" cy="620" r="70" fill="#6366f1" opacity="0.35"/>
+</svg>
+

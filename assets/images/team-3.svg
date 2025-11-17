@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="teamGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" rx="40" fill="url(#teamGrad3)"/>
+  <circle cx="400" cy="360" r="200" fill="rgba(255,255,255,0.76)"/>
+  <rect x="200" y="540" width="400" height="300" rx="200" fill="rgba(15,23,42,0.22)"/>
+  <rect x="260" y="580" width="280" height="240" rx="140" fill="rgba(255,255,255,0.55)"/>
+</svg>
+

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960">
+  <defs>
+    <linearGradient id="cityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="40%" stop-color="#1f3a70"/>
+      <stop offset="100%" stop-color="#3aaed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="960" fill="url(#cityGrad)"/>
+  <g fill="#ffffff" opacity="0.08">
+    <rect x="120" y="280" width="160" height="480"/>
+    <rect x="340" y="360" width="140" height="400"/>
+    <rect x="520" y="300" width="180" height="460"/>
+    <rect x="760" y="240" width="220" height="520"/>
+    <rect x="1020" y="320" width="160" height="440"/>
+    <rect x="1220" y="280" width="140" height="480"/>
+    <rect x="1380" y="360" width="120" height="400"/>
+  </g>
+  <rect x="160" y="200" width="1280" height="560" rx="32" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+  <path d="M0 700 C260 780 460 620 720 660 C1000 702 1240 900 1600 860 L1600 960 L0 960 Z" fill="rgba(8,18,40,0.65)"/>
+  <circle cx="1180" cy="220" r="160" fill="#fbbf24" opacity="0.3"/>
+  <circle cx="320" cy="260" r="110" fill="#38bdf8" opacity="0.25"/>
+</svg>
+

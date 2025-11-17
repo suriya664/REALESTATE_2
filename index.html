@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate | Find Your Dream Property</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="home">
+  <header>
+    <div class="topbar py-2">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="contact-info">  
+          <a href="tel:+18005551234"><i class="fa-solid fa-phone"></i>+1 800 555 1234</a>
+          <a href="mailto:hello@realestatehomes.com"><i class="fa-solid fa-envelope"></i>hello@realestatehomes.com</a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com" class="facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" class="instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com" class="linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com" class="youtube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 42px; width: auto;">
+            <rect width="160" height="44" rx="12" fill="#1BD8A6" fill-opacity="0.15"/>
+            <path d="M36 12H24C22.3431 12 21 13.3431 21 15V31C21 32.6569 22.3431 34 24 34H36C37.6569 34 39 32.6569 39 31V15C39 13.3431 37.6569 12 36 12Z" fill="#2A7DE1"/>
+            <path d="M28 26.5L31.5 21L35 26.5H28Z" fill="white"/>
+            <text x="48" y="30" fill="var(--text-primary)" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="16">Real Estate</text>
+          </svg>
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle dark/light theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-page="home">Home</a>
+              <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item" data-page="home" href="index.html">Home Classic</a></li>
+                <li><a class="dropdown-item" data-page="home-alt" href="index-2.html">Home City Hub</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" data-page="listings" href="property-list.html">Listings</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="featured" href="featured.html">Featured</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="agents" href="agent-details.html">Agents</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="services" href="service-details.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="contact" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-brand nav-btn" data-page="login" href="login.html">Log In</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-brand nav-btn" data-page="add-property" href="add-property.html">Add Property</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6 hero-content">
+            <span class="badge-soft mb-3 d-inline-flex align-items-center gap-2">
+              <i class="fa-solid fa-star"></i> Award-Winning Brokerage
+            </span>
+            <h1>Discover premium spaces crafted for modern living.</h1>
+            <p>Browse curated listings across vibrant cities and serene suburbs. Our experts guide you from search to settlement with clarity and confidence.</p>
+            <div class="d-sm-flex gap-3">
+              <a href="featured.html" class="btn btn-brand mb-3 mb-sm-0">Explore Featured Homes</a>
+              <a href="about.html" class="btn btn-outline-brand">Meet Our Team</a>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 mt-lg-0">
+            <div class="search-panel">
+              <h3 class="mb-4 text-center">Find properties instantly</h3>
+              <form class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label">Location</label>
+                  <input type="text" class="form-control" placeholder="City, neighborhood">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Property Type</label>
+                  <select class="form-select">
+                    <option>Apartment</option>
+                    <option>Villa</option>
+                    <option>Townhouse</option>
+                    <option>Commercial</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Budget</label>
+                  <select class="form-select">
+                    <option>$200k - $400k</option>
+                    <option>$400k - $600k</option>
+                    <option>$600k - $800k</option>
+                    <option>$800k+</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Bedrooms</label>
+                  <select class="form-select">
+                    <option>2+</option>
+                    <option>3+</option>
+                    <option>4+</option>
+                    <option>5+</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <a href="property-list.html" class="btn btn-brand">Start Property Search</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="bg-white">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured Properties</h2>
+          <h3>Handpicked listings with exceptional value</h3>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="property-card position-relative w-100">
+              <span class="feature-badge">Exclusive</span>
+              <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=900&q=80" alt="Luxury penthouse exterior" loading="lazy" width="900" height="600" class="img-cover">
+              <div class="property-content">
+                <h3>Skyline Penthouse</h3>
+                <div class="property-meta mb-3">
+                  <span><i class="fa-solid fa-location-dot text-primary me-1"></i>New York, USA</span>
+                  <span class="price-tag">$1,850,000</span>
+                </div>
+                <ul class="amenities">
+                  <li><i class="fa-solid fa-bed"></i>4 Beds</li>
+                  <li><i class="fa-solid fa-bath"></i>3 Baths</li>
+                  <li><i class="fa-solid fa-maximize"></i>3,200 sqft</li>
+                  <li><i class="fa-solid fa-car"></i>2 Garages</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="property-details.html" class="btn btn-outline-brand">View Details</a>
+                  <a href="contact.html" class="btn btn-brand">Book a Tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="property-card position-relative w-100">
+              <span class="feature-badge">Hot Deal</span>
+              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=900&q=80" alt="Modern seaside villa" loading="lazy" width="900" height="600" class="img-cover">
+              <div class="property-content">
+                <h3>Seaside Modern Villa</h3>
+                <div class="property-meta mb-3">
+                  <span><i class="fa-solid fa-location-dot text-primary me-1"></i>San Diego, USA</span>
+                  <span class="price-tag">$2,350,000</span>
+                </div>
+                <ul class="amenities">
+                  <li><i class="fa-solid fa-bed"></i>5 Beds</li>
+                  <li><i class="fa-solid fa-bath"></i>4 Baths</li>
+                  <li><i class="fa-solid fa-maximize"></i>3,800 sqft</li>
+                  <li><i class="fa-solid fa-water"></i>Private Pool</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="property-details.html" class="btn btn-outline-brand">View Details</a>
+                  <a href="add-property.html" class="btn btn-brand">Submit Offer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="property-card position-relative w-100">
+              <span class="feature-badge">New Listing</span>
+              <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=80" alt="Townhouse exterior in London" loading="lazy" width="900" height="600" class="img-cover">
+              <div class="property-content">
+                <h3>Greenwich Townhouse</h3>
+                <div class="property-meta mb-3">
+                  <span><i class="fa-solid fa-location-dot text-primary me-1"></i>London, UK</span>
+                  <span class="price-tag">£985,000</span>
+                </div>
+                <ul class="amenities">
+                  <li><i class="fa-solid fa-bed"></i>3 Beds</li>
+                  <li><i class="fa-solid fa-bath"></i>2 Baths</li>
+                  <li><i class="fa-solid fa-maximize"></i>2,100 sqft</li>
+                  <li><i class="fa-solid fa-tree"></i>Garden</li>
+                </ul>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <a href="property-details.html" class="btn btn-outline-brand">View Details</a>
+                  <a href="contact.html" class="btn btn-brand">Schedule Viewing</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why Clients Choose Real Estate</h2>
+          <h3>Expertise, trust, and personalized experiences</h3>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="stat-card">
+              <h3 class="counter" data-target="1200" data-suffix="+">1,200+</h3>
+              <p>Successful transactions closed across residential, commercial, and luxury markets.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="stat-card">
+              <h3 class="counter" data-target="340" data-suffix="+">340+</h3>
+              <p>Certified agents ready to assist you with local expertise and market intelligence.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="stat-card">
+              <h3 class="counter" data-target="24" data-suffix="+">24+</h3>
+              <p>Cities served with tailored property strategies for homeowners and investors.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="stat-card">
+              <h3 class="counter" data-target="98" data-suffix="+">98+</h3>
+              <p>Client satisfaction score based on post-settlement surveys and testimonials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Neighborhood Spotlight</h2>
+          <h3>Live where lifestyle meets convenience</h3>
+        </div>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=900&q=80" alt="Downtown bay district skyline" loading="lazy" width="900" height="600" class="img-cover">
+            <div class="content">
+              <h3>Downtown Bay District</h3>
+              <p>High-rise condos with sweeping waterfront views, cowork lounges, and sky decks minutes from tech campuses.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="tag-outline">Avg. $950k</span>
+                <a href="property-list.html" class="btn btn-outline-brand">See Listings</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80" alt="Family friendly suburb homes" loading="lazy" width="900" height="600" class="img-cover">
+            <div class="content">
+              <h3>Willow Creek Estates</h3>
+              <p>Family-centric suburb featuring top-rated schools, green parks, and spacious floor plans with smart amenities.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="tag-outline">Avg. $720k</span>
+                <a href="property-details.html" class="btn btn-outline-brand">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=900&q=80" alt="Warehouse loft lifestyle" loading="lazy" width="900" height="600" class="img-cover">
+            <div class="content">
+              <h3>Artisan Warehouse Row</h3>
+              <p>Industrial-chic lofts surrounded by galleries, artisan cafes, and weekend markets with endless energy.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="tag-outline">Avg. $610k</span>
+                <a href="service-details.html" class="btn btn-outline-brand">View Services</a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-card">
+            <img src="https://images.unsplash.com/photo-1459535653751-d571815e906b?auto=format&fit=crop&w=900&q=80" alt="Coastal community villas" loading="lazy" width="900" height="600" class="img-cover">
+            <div class="content">
+              <h3>Coral Shoreline Villas</h3>
+              <p>Resort-style living with private docks, wellness clubs, and panoramic ocean views perfect for investors.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="tag-outline">Avg. $1.2M</span>
+                <a href="featured.html" class="btn btn-outline-brand">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Client Success Stories</h2>
+          <h3>Voices from homeowners and investors</h3>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="testimonial-card w-100">
+              <i class="fa-solid fa-quote-left fa-2x text-primary mb-3"></i>
+              <p>“Real Estate matched us with a waterfront retreat that fit our lifestyle and future plans. Their insights on neighborhood growth were spot on.”</p>
+              <div class="client">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Client portrait" loading="lazy" width="200" height="200">
+                <div>
+                  <h5>Olivia Parker</h5>
+                  <span class="text-muted">Homeowner · Coral Shores</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="testimonial-card w-100">
+              <i class="fa-solid fa-quote-left fa-2x text-primary mb-3"></i>
+              <p>“Their data-driven approach helped us expand our portfolio in three cities. The closing process was efficient and stress-free.”</p>
+              <div class="client">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Client portrait" loading="lazy" width="200" height="200">
+                <div>
+                  <h5>Marcus Chen</h5>
+                  <span class="text-muted">Investor · Multi-city</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 d-flex">
+            <div class="testimonial-card w-100">
+              <i class="fa-solid fa-quote-left fa-2x text-primary mb-3"></i>
+              <p>“From staging to signing, the Real Estate team handled every detail with care. We sold above asking within two weeks.”</p>
+              <div class="client">
+                <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=200&q=80" alt="Client portrait" loading="lazy" width="200" height="200">
+                <div>
+                  <h5>Priya Desai</h5>
+                  <span class="text-muted">Seller · Willow Creek</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-banner d-lg-flex justify-content-between align-items-center">
+          <div>
+            <h2>Ready to upgrade your real estate journey?</h2>
+            <p>Partner with our dedicated advisors to list, lease, or purchase properties with confidence.</p>
+          </div>
+          <div class="d-flex gap-3 mt-3 mt-lg-0">
+            <a href="contact.html" class="btn btn-outline-light">Talk to an Advisor</a>
+            <a href="register.html" class="btn btn-light text-primary fw-semibold">Create Your Account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-6 col-xl-3">
+        <a href="index.html" class="d-inline-block mb-3" style="height: 42px; display: block;">
+          <svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 42px; width: auto;">
+            <rect width="160" height="44" rx="12" fill="#1BD8A6" fill-opacity="0.15"/>
+            <path d="M36 12H24C22.3431 12 21 13.3431 21 15V31C21 32.6569 22.3431 34 24 34H36C37.6569 34 39 32.6569 39 31V15C39 13.3431 37.6569 12 36 12Z" fill="#2A7DE1"/>
+            <path d="M28 26.5L31.5 21L35 26.5H28Z" fill="white"/>
+            <text x="48" y="30" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="16">Real Estate</text>
+          </svg>
+        </a>
+        <h5>About Real Estate</h5>
+        <p>Real Estate blends local expertise with global reach, delivering tailored property solutions for homeowners, tenants, and investors.</p>
+        <div class="social-links mt-3 d-flex gap-3">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#1877F2">
+              <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5 3.66 9.13 8.44 9.93v-7.03H8.07v-2.9h2.37V9.83c0-2.34 1.39-3.63 3.52-3.63.99 0 2.03.18 2.03.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42v1.7h2.5l-.4 2.9h-2.1V22c4.78-.8 8.44-4.93 8.44-9.93z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <linearGradient id="insta" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#feda75"/>
+                <stop offset="50%" stop-color="#d62976"/>
+                <stop offset="100%" stop-color="#4f5bd5"/>
+              </linearGradient>
+              <path fill="url(#insta)" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.3A4.7 4.7 0 1 1 7.3 12 4.7 4.7 0 0 1 12 7.3zm4.9-.9a1.1 1.1 0 1 1-1.1 1.1c0-.6.5-1.1 1.1-1.1zM12 9a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.135 1.445-2.135 2.939v5.667H9.353V9h3.414v1.561h.049c.477-.9 1.637-1.85 3.368-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286h-.004zM5.337 7.433A2.062 2.062 0 1 1 7.4 5.37a2.06 2.06 0 0 1-2.063 2.063zM6.96 20.452H3.714V9h3.247v11.452z"/>
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF0000">
+              <path d="M23.5 6.2s-.2-1.7-.9-2.5c-.8-.9-1.7-.9-2.1-1C17.9 2.3 12 2.3 12 2.3h-.1s-5.9 0-8.5.4c-.4.1-1.3.1-2.1 1-.7.8-.9 2.5-.9 2.5S0 8.2 0 10.1v1.8c0 1.9.2 3.9.2 3.9s.2 1.7.9 2.5c.8.9 1.8.9 2.3 1 1.7.2 7.3.4 7.3.4s5.9 0 8.5-.4c.4-.1 1.3-.1 2.1-1 .7-.8.9-2.5.9-2.5s.2-2 .2-3.9v-1.8c-.1-1.9-.3-3.9-.3-3.9zM9.6 14.7v-6l6.2 3-6.2 3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="property-list.html">All Listings</a></li>
+          <li><a href="service-details.html">Property Services</a></li>
+          <li><a href="featured.html">Featured Homes</a></li>
+          <li><a href="add-property.html">List Your Property</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <h5>Contact</h5>
+        <div class="contact-info">
+          <a href="tel:+18005551234"><i class="fa-solid fa-phone"></i>+1 800 555 1234</a>
+          <a href="mailto:hello@realestatehomes.com"><i class="fa-solid fa-envelope"></i>hello@realestatehomes.com</a>
+          <a href="https://maps.app.goo.gl/6Qv1EQvW2oE5yq7S9" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot"></i>45 Hudson Yards, New York, NY</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <h5>Stay Updated</h5>
+        <p>Subscribe for market insights, investment guides, and community spotlights. We respect your inbox.</p>
+        <form id="footerNewsletter" class="d-flex flex-column flex-sm-row gap-2" data-submit-text="Subscribe">
+          <input type="email" class="form-control" placeholder="Email address" required>
+          <button type="submit" class="btn btn-brand flex-shrink-0">Subscribe</button>
+        </form>
+        <div class="success-message mt-2">Thanks for subscribing!</div>
+        <div class="error-message mt-2">Unable to subscribe. Try again later.</div>
+      </div>
+    </div>
+    <div class="footer-bottom mt-4">
+      <p>&copy; <span id="currentYear"></span> Real Estate. Crafted with care for modern property seekers.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
